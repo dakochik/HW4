@@ -1,0 +1,10 @@
+C:\Users\Дмитрий\source\repos\HW4\HW4\bin\Debug\HW4.exe.config
+C:\Users\Дмитрий\source\repos\HW4\HW4\bin\Debug\HW4.exe
+C:\Users\Дмитрий\source\repos\HW4\HW4\bin\Debug\HW4.pdb
+C:\Users\Дмитрий\source\repos\HW4\HW4\bin\Debug\CreaturesLibrary.dll
+C:\Users\Дмитрий\source\repos\HW4\HW4\bin\Debug\CreaturesLibrary.pdb
+C:\Users\Дмитрий\source\repos\HW4\HW4\obj\Debug\CreatureGenerator.csprojAssemblyReference.cache
+C:\Users\Дмитрий\source\repos\HW4\HW4\obj\Debug\CreatureGenerator.csproj.CopyComplete
+C:\Users\Дмитрий\source\repos\HW4\HW4\obj\Debug\HW4.exe
+C:\Users\Дмитрий\source\repos\HW4\HW4\obj\Debug\HW4.pdb
+C:\Users\Дмитрий\source\repos\HW4\HW4\obj\Debug\CreatureGenerator.csproj.CoreCompileInputs.cache

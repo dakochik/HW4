@@ -1,0 +1,6 @@
+C:\Users\Дмитрий\source\repos\HW4\CreaturesLibrary\bin\Debug\CreaturesLibrary.dll
+C:\Users\Дмитрий\source\repos\HW4\CreaturesLibrary\bin\Debug\CreaturesLibrary.pdb
+C:\Users\Дмитрий\source\repos\HW4\CreaturesLibrary\obj\Debug\CreaturesLibrary.csprojAssemblyReference.cache
+C:\Users\Дмитрий\source\repos\HW4\CreaturesLibrary\obj\Debug\CreaturesLibrary.dll
+C:\Users\Дмитрий\source\repos\HW4\CreaturesLibrary\obj\Debug\CreaturesLibrary.pdb
+C:\Users\Дмитрий\source\repos\HW4\CreaturesLibrary\obj\Debug\CreaturesLibrary.csproj.CoreCompileInputs.cache

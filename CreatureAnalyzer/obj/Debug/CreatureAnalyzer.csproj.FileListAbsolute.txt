@@ -1,0 +1,10 @@
+C:\Users\Дмитрий\source\repos\HW4\CreatureAnalyzer\bin\Debug\CreatureAnalyzer.exe.config
+C:\Users\Дмитрий\source\repos\HW4\CreatureAnalyzer\bin\Debug\CreatureAnalyzer.exe
+C:\Users\Дмитрий\source\repos\HW4\CreatureAnalyzer\bin\Debug\CreatureAnalyzer.pdb
+C:\Users\Дмитрий\source\repos\HW4\CreatureAnalyzer\bin\Debug\CreaturesLibrary.dll
+C:\Users\Дмитрий\source\repos\HW4\CreatureAnalyzer\bin\Debug\CreaturesLibrary.pdb
+C:\Users\Дмитрий\source\repos\HW4\CreatureAnalyzer\obj\Debug\CreatureAnalyzer.csprojAssemblyReference.cache
+C:\Users\Дмитрий\source\repos\HW4\CreatureAnalyzer\obj\Debug\CreatureAnalyzer.csproj.CoreCompileInputs.cache
+C:\Users\Дмитрий\source\repos\HW4\CreatureAnalyzer\obj\Debug\CreatureAnalyzer.csproj.CopyComplete
+C:\Users\Дмитрий\source\repos\HW4\CreatureAnalyzer\obj\Debug\CreatureAnalyzer.exe
+C:\Users\Дмитрий\source\repos\HW4\CreatureAnalyzer\obj\Debug\CreatureAnalyzer.pdb
