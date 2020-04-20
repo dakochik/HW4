@@ -48,17 +48,40 @@ namespace CreaturesTester
         {
             Creature firstCreature = new Creature("IJustWD", MovementType.Walking, 7.8);
             DataContractSerializer serializer = new DataContractSerializer(typeof(Creature));
-            using (FileStream fs = new FileStream("testerFile.xml", FileMode.Create)) // Сериализуем список существ.
+            try
             {
-                serializer.WriteObject(fs, firstCreature);
+                using (FileStream fs = new FileStream("testerFile.xml", FileMode.Create)) // Сериализуем список существ.
+                {
+                    serializer.WriteObject(fs, firstCreature);
+                }
+                Creature secondCreature;
+                using (FileStream fs = new FileStream("testerFile.xml", FileMode.Open)) // Сериализуем список существ.
+                {
+                    secondCreature = (Creature)serializer.ReadObject(fs);
+                }
+                File.Delete("testerFile.xml");
+                Assert.AreEqual(firstCreature, secondCreature);
             }
-            Creature secondCreature;
-            using (FileStream fs = new FileStream("testerFile.xml", FileMode.Open)) // Сериализуем список существ.
+            catch (FileNotFoundException e)
             {
-                secondCreature=(Creature)serializer.ReadObject(fs);
+                Console.WriteLine("Файл не найден");
             }
-            File.Delete("testerFile.xml");
-            Assert.AreEqual(firstCreature, secondCreature);
+            catch (IOException)
+            {
+                Console.WriteLine("Ошибка ввода-вывода.");
+            }
+            catch (System.Security.SecurityException)
+            {
+                Console.WriteLine("Ошибка безопасности.");
+            }
+            catch (UnauthorizedAccessException)
+            {
+                Console.WriteLine("Запрет на доступ к файлу.");
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
         }
     }
 }

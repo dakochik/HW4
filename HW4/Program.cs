@@ -81,10 +81,33 @@ namespace HW4
                 }
             }
 
-            DataContractSerializer serializer = new DataContractSerializer(typeof(List<Creature>));
-            using (FileStream fs = new FileStream(pathForCreatures, FileMode.Create)) // Сериализуем список существ.
+            try
             {
-                serializer.WriteObject(fs, creatures);
+                DataContractSerializer serializer = new DataContractSerializer(typeof(List<Creature>));
+                using (FileStream fs = new FileStream(pathForCreatures, FileMode.Create)) // Сериализуем список существ.
+                {
+                    serializer.WriteObject(fs, creatures);
+                }
+            }
+            catch (FileNotFoundException e)
+            {
+                Console.WriteLine("Файл не найден");
+            }
+            catch (IOException)
+            {
+                Console.WriteLine("Ошибка ввода-вывода.");
+            }
+            catch (System.Security.SecurityException)
+            {
+                Console.WriteLine("Ошибка безопасности.");
+            }
+            catch (UnauthorizedAccessException)
+            {
+                Console.WriteLine("Запрет на доступ к файлу.");
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
             }
         }
     }

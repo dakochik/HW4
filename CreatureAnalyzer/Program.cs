@@ -23,11 +23,34 @@ namespace CreatureAnalyzer
 
         static void Main(string[] args)
         {
-            List<Creature> creatures; // Создаем список существ.
-            DataContractSerializer serializer = new DataContractSerializer(typeof(List<Creature>)); // Десериализуем существ из файла.
-            using (FileStream fs = new FileStream(pathForCreatures, FileMode.Open))
+            List<Creature> creatures=new List<Creature>(); // Создаем список существ.
+            try
             {
-                creatures= (List<Creature>)serializer.ReadObject(fs);
+                DataContractSerializer serializer = new DataContractSerializer(typeof(List<Creature>)); // Десериализуем существ из файла.
+                using (FileStream fs = new FileStream(pathForCreatures, FileMode.Open))
+                {
+                    creatures = (List<Creature>)serializer.ReadObject(fs);
+                }
+            }
+            catch (FileNotFoundException e)
+            {
+                Console.WriteLine("Файл не найден");
+            }
+            catch (IOException)
+            {
+                Console.WriteLine("Ошибка ввода-вывода.");
+            }
+            catch (System.Security.SecurityException)
+            {
+                Console.WriteLine("Ошибка безопасности.");
+            }
+            catch (UnauthorizedAccessException)
+            {
+                Console.WriteLine("Запрет на доступ к файлу.");
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
             }
 
             var swimmingCreatures = from Creature creature in creatures where creature.MovementType == MovementType.Swimming select creature; // С помощью LINQ вытаскиваем из писка только тех существ, которые в жизни умеют только плавать.
